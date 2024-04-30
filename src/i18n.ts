@@ -15,7 +15,7 @@ i18n
   .use(initReactI18next)
   .init({
     backend: {
-      loadPath: 'locales/{{lng}}/{{ns}}.json',
+      loadPath: '/zeusai/locales/{{lng}}/{{ns}}.json',
     },
     fallbackLng: {
       default: ['en'],

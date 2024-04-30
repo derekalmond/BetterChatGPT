@@ -19,5 +19,15 @@ export default defineConfig({
       '@src/': new URL('./src/', import.meta.url).pathname,
     },
   },
-  base: './',
+  build: {
+    rollupOptions: {
+      output: {
+        // Bundle everything into a single file
+        entryFileNames: '[name].js',
+        chunkFileNames: 'chunks/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+      },
+    },
+  },
+  base: '/zeusai/',
 });
