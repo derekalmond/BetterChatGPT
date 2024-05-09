@@ -75,7 +75,7 @@ function App() {
   }, []);
 
   return (
-    <div className='overflow-hidden w-full h-full relative mt-36'>
+    <div className='w-full h-full'>
       <Menu />
       <Chat />
       <ApiPopup />

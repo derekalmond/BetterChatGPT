@@ -4,7 +4,7 @@ import { shallow } from 'zustand/shallow';
 
 import countTokens from '@utils/messageUtils';
 import { modelCost } from '@constants/chat';
-
+const SEO_UP = 1.2;
 const TokenCount = React.memo(() => {
   const [tokenCount, setTokenCount] = useState<number>(0);
   const generating = useStore((state) => state.generating);
@@ -21,10 +21,11 @@ const TokenCount = React.memo(() => {
   );
 
   const cost = useMemo(() => {
+
     const price =
       modelCost[model].prompt.price *
       (tokenCount / modelCost[model].prompt.unit);
-    return price.toPrecision(3);
+    return (SEO_UP * price).toPrecision(3);
   }, [model, tokenCount]);
 
   useEffect(() => {
@@ -33,7 +34,7 @@ const TokenCount = React.memo(() => {
 
   return (
     <div className='absolute top-[-16px] right-0'>
-      <div className='text-xs italic text-gray-900 dark:text-gray-300'>
+      <div className='text-sm italic text-gray-900 dark:text-gray-300'>
         Tokens: {tokenCount} (${cost})
       </div>
     </div>

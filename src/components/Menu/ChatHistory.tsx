@@ -105,7 +105,7 @@ const ChatHistory = React.memo(
           {isEdit ? (
             <input
               type='text'
-              className='focus:outline-blue-600 text-sm border-none bg-transparent p-0 m-0 w-full'
+              className='focus:outline-blue-600 text-lg border-none bg-transparent p-0 m-0 w-full'
               value={_title}
               onChange={(e) => {
                 _setTitle(e.target.value);

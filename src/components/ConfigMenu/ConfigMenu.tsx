@@ -98,7 +98,7 @@ export const ModelSelector = ({
         } absolute top-100 bottom-100 z-10 bg-white rounded-lg shadow-xl border-b border-black/10 dark:border-gray-900/50 text-gray-800 dark:text-gray-100 group dark:bg-gray-800 opacity-90`}
       >
         <ul
-          className='text-sm text-gray-700 dark:text-gray-200 p-0 m-0'
+          className='text-lg text-gray-700 dark:text-gray-200 p-0 m-0'
           aria-labelledby='dropdownDefaultButton'
         >
           {modelOptions.map((m) => (
@@ -139,7 +139,7 @@ export const MaxTokenSlider = ({
 
   return (
     <div>
-      <label className='block text-sm font-medium text-gray-900 dark:text-white'>
+      <label className='block text-lg font-medium text-gray-900 dark:text-white'>
         {t('token.label')}: {_maxToken}
       </label>
       <input
@@ -154,7 +154,7 @@ export const MaxTokenSlider = ({
         step={1}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
+      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-lg mt-2'>
         {t('token.description')}
       </div>
     </div>
@@ -172,7 +172,7 @@ export const TemperatureSlider = ({
 
   return (
     <div className='mt-5 pt-5 border-t border-gray-500'>
-      <label className='block text-sm font-medium text-gray-900 dark:text-white'>
+      <label className='block text-lg font-medium text-gray-900 dark:text-white'>
         {t('temperature.label')}: {_temperature}
       </label>
       <input
@@ -187,7 +187,7 @@ export const TemperatureSlider = ({
         step={0.1}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
+      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-lg mt-2'>
         {t('temperature.description')}
       </div>
     </div>
@@ -205,7 +205,7 @@ export const TopPSlider = ({
 
   return (
     <div className='mt-5 pt-5 border-t border-gray-500'>
-      <label className='block text-sm font-medium text-gray-900 dark:text-white'>
+      <label className='block text-lg font-medium text-gray-900 dark:text-white'>
         {t('topP.label')}: {_topP}
       </label>
       <input
@@ -220,7 +220,7 @@ export const TopPSlider = ({
         step={0.05}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
+      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-lg mt-2'>
         {t('topP.description')}
       </div>
     </div>
@@ -238,7 +238,7 @@ export const PresencePenaltySlider = ({
 
   return (
     <div className='mt-5 pt-5 border-t border-gray-500'>
-      <label className='block text-sm font-medium text-gray-900 dark:text-white'>
+      <label className='block text-lg font-medium text-gray-900 dark:text-white'>
         {t('presencePenalty.label')}: {_presencePenalty}
       </label>
       <input
@@ -253,7 +253,7 @@ export const PresencePenaltySlider = ({
         step={0.1}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
+      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-lg mt-2'>
         {t('presencePenalty.description')}
       </div>
     </div>
@@ -271,7 +271,7 @@ export const FrequencyPenaltySlider = ({
 
   return (
     <div className='mt-5 pt-5 border-t border-gray-500'>
-      <label className='block text-sm font-medium text-gray-900 dark:text-white'>
+      <label className='block text-lg font-medium text-gray-900 dark:text-white'>
         {t('frequencyPenalty.label')}: {_frequencyPenalty}
       </label>
       <input
@@ -286,7 +286,7 @@ export const FrequencyPenaltySlider = ({
         step={0.1}
         className='w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer'
       />
-      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-sm mt-2'>
+      <div className='min-w-fit text-gray-500 dark:text-gray-300 text-lg mt-2'>
         {t('frequencyPenalty.description')}
       </div>
     </div>

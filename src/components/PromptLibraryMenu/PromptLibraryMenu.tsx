@@ -96,7 +96,7 @@ const PromptLibraryMenuPopUp = ({
       setIsModalOpen={setIsModalOpen}
       handleConfirm={handleSave}
     >
-      <div className='p-6 border-b border-gray-200 dark:border-gray-600 w-[90vw] max-w-full text-sm text-gray-900 dark:text-gray-300'>
+      <div className='p-6 border-b border-gray-200 dark:border-gray-600 w-[90vw] max-w-full text-lg text-gray-900 dark:text-gray-300'>
         <div className='border px-4 py-2 rounded border-gray-200 dark:border-gray-600'>
           <ImportPrompt />
           <ExportPrompt />
@@ -159,7 +159,7 @@ const PromptLibraryMenuPopUp = ({
         </div>
         <div className='flex justify-center mt-2'>
           <div
-            className='btn btn-neutral cursor-pointer text-xs'
+            className='btn btn-neutral cursor-pointer text-sm'
             onClick={clearPrompts}
           >
             {t('clearPrompts')}

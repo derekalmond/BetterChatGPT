@@ -9,7 +9,7 @@ const getOppositeTheme = (theme: Theme): Theme => {
   if (theme === 'dark') {
     return 'light';
   } else {
-    return 'dark';
+    return 'light';
   }
 };
 const ThemeSwitcher = () => {

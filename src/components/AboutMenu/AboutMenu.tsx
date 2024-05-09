@@ -10,7 +10,7 @@ const AboutMenu = () => {
   return (
     <>
       <a
-        className='flex py-2 px-2 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm'
+        className='flex py-2 px-2 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-lg'
         onClick={() => {
           setIsModalOpen(true);
         }}
@@ -27,7 +27,7 @@ const AboutMenu = () => {
           cancelButton={false}
         >
           <div className='p-6 border-b border-gray-200 dark:border-gray-600'>
-            <div className='min-w-fit text-gray-900 dark:text-gray-300 text-sm flex flex-col gap-3 leading-relaxed'>
+            <div className='min-w-fit text-gray-900 dark:text-gray-300 text-lg flex flex-col gap-3 leading-relaxed'>
               <p>{t('description', { ns: 'about' })}</p>
               <p>
                 <Trans
@@ -57,7 +57,7 @@ const AboutMenu = () => {
                 />
               </p>
 
-              <h2 className='text-lg font-bold'>
+              <h2 className='text-xl font-bold'>
                 {t('discordServer.title', { ns: 'about' })}
               </h2>
               <p>{t('discordServer.paragraph1', { ns: 'about' })}</p>
@@ -77,7 +77,7 @@ const AboutMenu = () => {
               </p>
 
               <>
-                <h2 className='text-lg font-bold'>
+                <h2 className='text-xl font-bold'>
                   {t('support.title', { ns: 'about' })}
                 </h2>
                 <p>{t('support.paragraph1', { ns: 'about' })}</p>
@@ -134,7 +134,7 @@ const AboutMenu = () => {
                 <p>{t('support.paragraph4', { ns: 'about' })}</p>
               </>
 
-              <h2 className='text-lg font-bold'>
+              <h2 className='text-xl font-bold'>
                 {t('privacyStatement.title', { ns: 'about' })}
               </h2>
               <p>{t('privacyStatement.paragraph1', { ns: 'about' })}</p>

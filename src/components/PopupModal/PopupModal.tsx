@@ -58,12 +58,12 @@ const PopupModal = ({
         <div className='relative z-2 max-w-2xl md:h-auto flex justify-center max-h-full'>
           <div className='relative bg-gray-50 rounded-lg shadow dark:bg-gray-700 max-h-full overflow-y-auto hide-scroll-bar'>
             <div className='flex items-center justify-between p-4 border-b rounded-t dark:border-gray-600'>
-              <h3 className='ml-2 text-lg font-semibold text-gray-900 dark:text-white'>
+              <h3 className='ml-2 text-xl font-semibold text-gray-900 dark:text-white'>
                 {title}
               </h3>
               <button
                 type='button'
-                className='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
+                className='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-lg p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
                 onClick={_handleClose}
                 aria-label='close modal'
               >
@@ -73,7 +73,7 @@ const PopupModal = ({
 
             {message && (
               <div className='p-6 border-b border-gray-200 dark:border-gray-600'>
-                <div className='min-w-fit text-gray-900 dark:text-gray-300 text-sm mt-4'>
+                <div className='min-w-fit text-gray-900 dark:text-gray-300 text-lg mt-4'>
                   {message}
                 </div>
               </div>
